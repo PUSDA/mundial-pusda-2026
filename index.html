@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mundial Familia PUSDÁ 2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="bg"></div>
+  <header class="hero">
+    <div class="badge">🇪🇨 Modo Mundialista Familiar</div>
+    <h1>🏆 Mundial Familia PUSDÁ 2026</h1>
+    <p>Porque el verdadero campeón también se vive en familia.</p>
+  </header>
+
+  <main class="app">
+    <section class="card selector">
+      <h2>1. Escoge tu nombre</h2>
+      <select id="playerSelect"><option value="">Seleccionar participante</option></select>
+      <p class="small">Participantes autorizados: Luis, Tere, Niko, Caro, Abraham, Samir, Pablo, Jorgito, Taty, Marty y Teo.</p>
+    </section>
+
+    <section class="card score">
+      <h2>🏅 Tabla familiar</h2>
+      <div id="leaderboard"></div>
+    </section>
+
+    <section class="card matches">
+      <h2>⚽ Partidos de eliminación directa</h2>
+      <p class="small">Hora Ecuador. Se puede votar una sola vez por partido. Luego no se puede cambiar.</p>
+      <div id="matches"></div>
+    </section>
+
+    <section class="card admin">
+      <details>
+        <summary>🔐 Panel Pablo / Administrador</summary>
+        <p class="small">Clave inicial: <b>PUSDA2026</b>. Aquí colocas el ganador real de cada partido para actualizar puntos.</p>
+        <input id="adminPass" type="password" placeholder="Clave administrador">
+        <button id="unlockAdmin">Entrar</button>
+        <div id="adminPanel" class="hidden"></div>
+      </details>
+    </section>
+  </main>
+
+  <div id="toast"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
