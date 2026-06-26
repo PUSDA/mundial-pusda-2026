@@ -1,4 +1,7 @@
-// Pablo: aquí pegaremos los datos de Supabase cuando los tengas.
-window.SUPABASE_URL = "PEGA_AQUI_TU_SUPABASE_URL";
-window.SUPABASE_ANON_KEY = "PEGA_AQUI_TU_SUPABASE_ANON_KEY";
-window.ADMIN_PASSWORD = "PUSDA2026";
+// PASO SUPABASE: aquí pegaremos tus datos cuando creemos la base.
+// Mientras está vacío, la página funciona en modo local de prueba.
+window.MUNDIAL_CONFIG = {
+  SUPABASE_URL: "",
+  SUPABASE_ANON_KEY: "",
+  ADMIN_PIN: "2026"
+};
